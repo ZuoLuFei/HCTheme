@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  HCTheme
 //
-//  Created by 黄超 on 2018/11/7.
-//  Copyright © 2018 佐路飞. All rights reserved.
+//  Created by ZuoLuFei on 2018/11/7.
+//  Copyright © 2018 ZuoLuFei. All rights reserved.
 //
 
 import UIKit

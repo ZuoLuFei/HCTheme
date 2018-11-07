@@ -1,16 +1,11 @@
 /*******************************************************************************
  # File        : UITabBarItem+Theme.swift
  # Project     : KuCoin
- # Author      : 佐路飞
+ # Author      : ZuoLuFei
  # Created     : 2018/8/29
  # Corporation : ####
  # Description :
  <#Description Logs#>
- -------------------------------------------------------------------------------
- # Date        : <#Change Date#>
- # Author      : <#Change Author#>
- # Notes       :
- <#Change Logs#>
  ******************************************************************************/
 
 import UIKit

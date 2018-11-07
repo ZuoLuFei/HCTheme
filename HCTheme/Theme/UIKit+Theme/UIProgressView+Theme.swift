@@ -1,7 +1,7 @@
 /*******************************************************************************
  # File        : UIProgressView+Theme.swift
  # Project     : HCTheme
- # Author      : 佐路飞
+ # Author      : ZuoLuFei
  # Created     : 2018/7/23
  # Corporation : ####
  # Description :

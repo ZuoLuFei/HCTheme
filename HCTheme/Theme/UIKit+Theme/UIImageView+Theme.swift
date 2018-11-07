@@ -1,7 +1,7 @@
 /*******************************************************************************
  # File        : UIImageView+Theme.swift
  # Project     : HCTheme
- # Author      : 佐路飞
+ # Author      : ZuoLuFei
  # Created     : 2018/7/24
  # Corporation : ####
  # Description :
@@ -38,5 +38,23 @@ extension UIImageView {
             guard let rawValue = valueFor(&imgKey) else { return nil }
             return HCTheme.Image(rawValue: rawValue)
         }
+    }
+    
+}
+
+extension UIImageView {
+    // 主题更新通知方法
+    @objc override func themeUpdate() {
+        pickers.forEach({ (selectorKey, themeColor) in
+            let sel: Selector = Selector(selectorKey)
+            let key = (themeColor as? String) ?? ""
+            let result = HCThemeManager.share.imageOf(key: key)
+            
+            UIView.animate(withDuration: HCThemeModeAnimationDuration, animations: {
+                
+                self.perform(sel, with: result)
+                
+            })
+        })
     }
 }

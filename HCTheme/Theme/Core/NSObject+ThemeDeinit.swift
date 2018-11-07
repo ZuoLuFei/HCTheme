@@ -1,7 +1,7 @@
 /*******************************************************************************
  # File        : NSObject+ThemeDeinit.swift
  # Project     : HCTheme
- # Author      : 佐路飞
+ # Author      : ZuoLuFei
  # Created     : 2018/7/25
  # Corporation : ####
  # Description : 记录需要释放的通知主体

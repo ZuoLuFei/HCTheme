@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="HCThemeCell" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="HCThemeCell" customModule="HCTheme" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日间模式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIm-bh-9xm">
+                        <rect key="frame" x="12" y="0.0" width="57.5" height="43.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Common_App_Store" translatesAutoresizingMaskIntoConstraints="NO" id="YJh-GN-LJ1">
+                        <rect key="frame" x="79.5" y="10" width="172" height="23.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="172" id="uAx-7T-gFg"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YJh-GN-LJ1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="2gy-cp-mdr"/>
+                    <constraint firstAttribute="bottom" secondItem="RIm-bh-9xm" secondAttribute="bottom" id="6y8-R2-8OX"/>
+                    <constraint firstItem="RIm-bh-9xm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="A4v-ei-XPY"/>
+                    <constraint firstItem="RIm-bh-9xm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Dws-AF-dgL"/>
+                    <constraint firstItem="YJh-GN-LJ1" firstAttribute="leading" secondItem="RIm-bh-9xm" secondAttribute="trailing" constant="10" id="U5E-Zn-qgA"/>
+                    <constraint firstAttribute="bottom" secondItem="YJh-GN-LJ1" secondAttribute="bottom" constant="10" id="Ysi-Hi-BSZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <accessibility key="accessibilityConfiguration" identifier="HCThemeCell"/>
+            <connections>
+                <outlet property="titleImage" destination="YJh-GN-LJ1" id="goU-d6-7OK"/>
+                <outlet property="titleLab" destination="RIm-bh-9xm" id="sQL-RS-2pC"/>
+            </connections>
+            <point key="canvasLocation" x="524.79999999999995" y="59.370314842578715"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Common_App_Store" width="172" height="50"/>
+    </resources>
+</document>

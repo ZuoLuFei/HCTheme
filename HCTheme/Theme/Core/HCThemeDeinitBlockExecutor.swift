@@ -1,7 +1,7 @@
 /*******************************************************************************
  # File        : HCThemeDeinitBlockExecutor.swift
  # Project     : HCTheme
- # Author      : 佐路飞
+ # Author      : ZuoLuFei
  # Created     : 2018/7/25
  # Corporation : ####
  # Description : 主题切换方案注册通知实际释放操作类

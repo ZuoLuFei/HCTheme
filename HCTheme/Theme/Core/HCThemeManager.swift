@@ -1,11 +1,10 @@
 /*******************************************************************************
  # File        : HCThemeManager.swift
  # Project     : HCTheme
- # Author      : 佐路飞
+ # Author      : ZuoLuFei
  # Created     : 2018/7/19
  # Corporation : ####
  # Description : 主题切换管理类
- -------------------------------------------------------------------------------
  ******************************************************************************/
 
 import UIKit
@@ -16,7 +15,7 @@ let HCThemeModeAnimationDuration = 0.3
 // MARK: - 初始化
 class HCThemeManager: NSObject {
     // 主题偏好设置存储
-    static let themeKey = "com.kucoin.KuCoin.App.HCThemeManager.themeKey"
+    static let themeKey = "com.zuolufei.HCTheme.HCThemeManager.themeKey"
 
     // 当前主题
     private var current: HCTheme = .night
@@ -79,10 +78,6 @@ extension HCThemeManager {
     /// 获取颜色
     func colorOf(key: String) -> UIColor {
 
-//        let color = UIColor.hexString(value: "")
-
-        //            let color = UIColor(hexString: colorStr) {
-
         if let colorStr = (colors[current.rawValue] as? [String: String])?[key] {
             return UIColor.hc_hexString(value: colorStr)
         }
@@ -92,6 +87,7 @@ extension HCThemeManager {
 
     /// 获取图片
     func imageOf(key: String) -> UIImage {
+        
         if let imageStr = (images[current.rawValue] as? [String: String])?[key],
             let img = UIImage(named: imageStr) {
             return img

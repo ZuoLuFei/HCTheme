@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A8EF3D582192778E00B47957 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF3D572192778E00B47957 /* AppDelegate.swift */; };
-		A8EF3D5A2192778E00B47957 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF3D592192778E00B47957 /* ViewController.swift */; };
+		A8EF3D5A2192778E00B47957 /* HCThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF3D592192778E00B47957 /* HCThemeViewController.swift */; };
 		A8EF3D5D2192778E00B47957 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8EF3D5B2192778E00B47957 /* Main.storyboard */; };
 		A8EF3D5F2192778F00B47957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8EF3D5E2192778F00B47957 /* Assets.xcassets */; };
 		A8EF3D622192778F00B47957 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8EF3D602192778F00B47957 /* LaunchScreen.storyboard */; };
@@ -41,13 +41,16 @@
 		A8EF3DA92192804A00B47957 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF3DA82192804A00B47957 /* UIColor+Theme.swift */; };
 		A8EF3DAB2192810800B47957 /* UIImage+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF3DAA2192810800B47957 /* UIImage+Theme.swift */; };
 		A8EF3DAD2192817000B47957 /* HCTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF3DAC2192816F00B47957 /* HCTheme.swift */; };
-		A8EF3DAF219281CF00B47957 /* DemoTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF3DAE219281CF00B47957 /* DemoTheme.swift */; };
+		A8EF3DB52192890800B47957 /* ThemeColor.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8EF3DB32192890800B47957 /* ThemeColor.plist */; };
+		A8EF3DB62192890800B47957 /* ThemeImage.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8EF3DB42192890800B47957 /* ThemeImage.plist */; };
+		A8EF3DBB21928F7A00B47957 /* HCThemeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF3DB921928F7A00B47957 /* HCThemeCell.swift */; };
+		A8EF3DBC21928F7A00B47957 /* HCThemeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8EF3DBA21928F7A00B47957 /* HCThemeCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A8EF3D542192778E00B47957 /* HCTheme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCTheme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8EF3D572192778E00B47957 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A8EF3D592192778E00B47957 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A8EF3D592192778E00B47957 /* HCThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCThemeViewController.swift; sourceTree = "<group>"; };
 		A8EF3D5C2192778E00B47957 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8EF3D5E2192778F00B47957 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8EF3D612192778F00B47957 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -81,7 +84,10 @@
 		A8EF3DA82192804A00B47957 /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 		A8EF3DAA2192810800B47957 /* UIImage+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Theme.swift"; sourceTree = "<group>"; };
 		A8EF3DAC2192816F00B47957 /* HCTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCTheme.swift; sourceTree = "<group>"; };
-		A8EF3DAE219281CF00B47957 /* DemoTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTheme.swift; sourceTree = "<group>"; };
+		A8EF3DB32192890800B47957 /* ThemeColor.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ThemeColor.plist; sourceTree = "<group>"; };
+		A8EF3DB42192890800B47957 /* ThemeImage.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ThemeImage.plist; sourceTree = "<group>"; };
+		A8EF3DB921928F7A00B47957 /* HCThemeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCThemeCell.swift; sourceTree = "<group>"; };
+		A8EF3DBA21928F7A00B47957 /* HCThemeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HCThemeCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +122,7 @@
 			children = (
 				A8EF3D69219278D400B47957 /* Theme */,
 				A8EF3D572192778E00B47957 /* AppDelegate.swift */,
-				A8EF3D592192778E00B47957 /* ViewController.swift */,
-				A8EF3DAE219281CF00B47957 /* DemoTheme.swift */,
+				A8EF3DBD21928F8900B47957 /* Demo */,
 				A8EF3D5B2192778E00B47957 /* Main.storyboard */,
 				A8EF3D5E2192778F00B47957 /* Assets.xcassets */,
 				A8EF3D602192778F00B47957 /* LaunchScreen.storyboard */,
@@ -129,6 +134,7 @@
 		A8EF3D69219278D400B47957 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
+				A8EF3DB12192882C00B47957 /* Resources */,
 				A8EF3DA521927F9600B47957 /* Assist */,
 				A8EF3D6A219278D400B47957 /* Core */,
 				A8EF3D6F219278D400B47957 /* UIKit+Theme */,
@@ -140,7 +146,6 @@
 		A8EF3D6A219278D400B47957 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				A8EF3DAC2192816F00B47957 /* HCTheme.swift */,
 				A8EF3D6B219278D400B47957 /* NSObject+ThemeDeinit.swift */,
 				A8EF3D6C219278D400B47957 /* HCThemeManager.swift */,
 				A8EF3D6D219278D400B47957 /* HCThemeDeinitBlockExecutor.swift */,
@@ -194,6 +199,26 @@
 			path = Assist;
 			sourceTree = "<group>";
 		};
+		A8EF3DB12192882C00B47957 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A8EF3DAC2192816F00B47957 /* HCTheme.swift */,
+				A8EF3DB32192890800B47957 /* ThemeColor.plist */,
+				A8EF3DB42192890800B47957 /* ThemeImage.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A8EF3DBD21928F8900B47957 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				A8EF3D592192778E00B47957 /* HCThemeViewController.swift */,
+				A8EF3DB921928F7A00B47957 /* HCThemeCell.swift */,
+				A8EF3DBA21928F7A00B47957 /* HCThemeCell.xib */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -222,7 +247,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "佐路飞";
+				ORGANIZATIONNAME = ZuoLuFei;
 				TargetAttributes = {
 					A8EF3D532192778E00B47957 = {
 						CreatedOnToolsVersion = 10.1;
@@ -252,7 +277,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8EF3DB52192890800B47957 /* ThemeColor.plist in Resources */,
 				A8EF3D622192778F00B47957 /* LaunchScreen.storyboard in Resources */,
+				A8EF3DBC21928F7A00B47957 /* HCThemeCell.xib in Resources */,
+				A8EF3DB62192890800B47957 /* ThemeImage.plist in Resources */,
 				A8EF3D5F2192778F00B47957 /* Assets.xcassets in Resources */,
 				A8EF3D5D2192778E00B47957 /* Main.storyboard in Resources */,
 			);
@@ -265,9 +293,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8EF3D5A2192778E00B47957 /* ViewController.swift in Sources */,
+				A8EF3D5A2192778E00B47957 /* HCThemeViewController.swift in Sources */,
 				A8EF3DA721927FDD00B47957 /* UserDefaults+Theme.swift in Sources */,
-				A8EF3DAF219281CF00B47957 /* DemoTheme.swift in Sources */,
 				A8EF3D8E219278D400B47957 /* UIProgressView+Theme.swift in Sources */,
 				A8EF3D87219278D400B47957 /* HCThemeDeinitBlockExecutor.swift in Sources */,
 				A8EF3D582192778E00B47957 /* AppDelegate.swift in Sources */,
@@ -276,6 +303,7 @@
 				A8EF3D98219278D400B47957 /* UIControl+Theme.swift in Sources */,
 				A8EF3D8F219278D400B47957 /* UITextView+Theme.swift in Sources */,
 				A8EF3DA421927A6000B47957 /* HCThemeNotification.swift in Sources */,
+				A8EF3DBB21928F7A00B47957 /* HCThemeCell.swift in Sources */,
 				A8EF3D86219278D400B47957 /* HCThemeManager.swift in Sources */,
 				A8EF3D93219278D400B47957 /* UITabBarItem+Theme.swift in Sources */,
 				A8EF3D8B219278D400B47957 /* UIView+Theme.swift in Sources */,

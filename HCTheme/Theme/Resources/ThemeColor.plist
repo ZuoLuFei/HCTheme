@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Normal</key>
+	<dict>
+		<key>main</key>
+		<string>00FF7F</string>
+		<key>keyWord</key>
+		<string>FFC125</string>
+		<key>tipWord</key>
+		<string>CD2626</string>
+		<key>tipWord60</key>
+		<string>CD262699</string>
+		<key>pageBg</key>
+		<string>9C9C9C</string>
+		<key>moduleBg</key>
+		<string>A9A9A9</string>
+		<key>navigationTitle</key>
+		<string>8968CD</string>
+	</dict>
+	<key>Night</key>
+	<dict>
+		<key>main</key>
+		<string>0f7dff</string>
+		<key>keyWord</key>
+		<string>dee1e5</string>
+		<key>tipWord</key>
+		<string>747f8d</string>
+		<key>tipWord60</key>
+		<string>747f8d99</string>
+		<key>pageBg</key>
+		<string>171f29</string>
+		<key>moduleBg</key>
+		<string>1d2633</string>
+		<key>navigationTitle</key>
+		<string>ffffff</string>
+	</dict>
+</dict>
+</plist>
