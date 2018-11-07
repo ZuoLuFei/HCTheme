@@ -18,7 +18,7 @@ class HCThemeManager: NSObject {
     static let themeKey = "com.zuolufei.HCTheme.HCThemeManager.themeKey"
 
     // 当前主题
-    private var current: HCTheme = .night
+    public var current: HCTheme = .night
 
     /**
      * 颜色模型数据

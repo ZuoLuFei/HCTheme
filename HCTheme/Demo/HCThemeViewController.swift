@@ -12,12 +12,10 @@ import UIKit
 
 class HCThemeViewController: UITableViewController {
     
-    private var theme = HCTheme.night
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        HCThemeManager.share.configThemeType(.night)
+        
         
         _configUI()
     }
@@ -48,7 +46,7 @@ extension HCThemeViewController {
     
     @objc func changeBtnClick() {
         
-        theme = theme == HCTheme.night ? HCTheme.normal : HCTheme.night
+        let theme = HCThemeManager.share.current == HCTheme.night ? HCTheme.normal : HCTheme.night
         HCThemeManager.share.configThemeType(theme)
     }
     
