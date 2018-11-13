@@ -25,7 +25,7 @@ extension UITabBarItem {
         }
 
         get {
-            guard let rawValue = valueFor(&imageKey) else { return nil }
+            guard let rawValue = theme_valueFor(&imageKey) else { return nil }
             return HCTheme.Image(rawValue: rawValue)
         }
     }
@@ -40,7 +40,7 @@ extension UITabBarItem {
         }
 
         get {
-            guard let rawValue = valueFor(&selectedImageKey) else { return nil }
+            guard let rawValue = theme_valueFor(&selectedImageKey) else { return nil }
             return HCTheme.Image(rawValue: rawValue)
         }
     }

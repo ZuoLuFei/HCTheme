@@ -25,7 +25,7 @@ extension UISlider {
         }
 
         get {
-            guard let rawValue = valueFor(&minimumTrackTintColorKey) else { return nil }
+            guard let rawValue = theme_valueFor(&minimumTrackTintColorKey) else { return nil }
             return HCTheme.Color(rawValue: rawValue)
         }
 
@@ -42,7 +42,7 @@ extension UISlider {
         }
 
         get {
-            guard let rawValue = valueFor(&maximumTrackTintColorKey) else { return nil }
+            guard let rawValue = theme_valueFor(&maximumTrackTintColorKey) else { return nil }
             return HCTheme.Color(rawValue: rawValue)
         }
 
@@ -59,7 +59,7 @@ extension UISlider {
         }
 
         get {
-            guard let rawValue = valueFor(&thumbTintColorKey) else { return nil }
+            guard let rawValue = theme_valueFor(&thumbTintColorKey) else { return nil }
             return HCTheme.Color(rawValue: rawValue)
         }
     }

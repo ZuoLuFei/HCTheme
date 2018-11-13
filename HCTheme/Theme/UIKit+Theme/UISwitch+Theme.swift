@@ -24,7 +24,7 @@ extension UISwitch {
         }
 
         get {
-            guard let rawValue = valueFor(&onTintColorKey) else { return nil }
+            guard let rawValue = theme_valueFor(&onTintColorKey) else { return nil }
             return HCTheme.Color(rawValue: rawValue)
         }
     }
@@ -40,7 +40,7 @@ extension UISwitch {
         }
 
         get {
-            guard let rawValue = valueFor(&thumbTintColorKey) else { return nil }
+            guard let rawValue = theme_valueFor(&thumbTintColorKey) else { return nil }
             return HCTheme.Color(rawValue: rawValue)
         }
     }

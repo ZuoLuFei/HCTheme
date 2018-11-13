@@ -71,7 +71,7 @@ extension NSObject {
     /**
      *
      */
-    func valueFor(_ dataKey: UnsafeRawPointer) -> String? {
+    func theme_valueFor(_ dataKey: UnsafeRawPointer) -> String? {
         return objc_getAssociatedObject(self, dataKey) as? String
     }
 

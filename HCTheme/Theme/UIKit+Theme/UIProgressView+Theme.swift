@@ -24,7 +24,7 @@ extension UIProgressView {
         }
 
         get {
-            guard let rawValue = valueFor(&progressTintColorKey) else { return nil }
+            guard let rawValue = theme_valueFor(&progressTintColorKey) else { return nil }
             return HCTheme.Color(rawValue: rawValue)
         }
 
@@ -41,7 +41,7 @@ extension UIProgressView {
         }
 
         get {
-            guard let rawValue = valueFor(&trackTintColorKey) else { return nil }
+            guard let rawValue = theme_valueFor(&trackTintColorKey) else { return nil }
             return HCTheme.Color(rawValue: rawValue)
         }
     }

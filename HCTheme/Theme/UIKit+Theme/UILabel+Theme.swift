@@ -26,7 +26,7 @@ extension UILabel {
         }
 
         get {
-            guard let rawValue = valueFor(&textColorKey) else { return nil }
+            guard let rawValue = theme_valueFor(&textColorKey) else { return nil }
             return HCTheme.Color(rawValue: rawValue)
         }
     }
@@ -42,7 +42,7 @@ extension UILabel {
         }
 
         get {
-            guard let rawValue = valueFor(&shadowColorKey) else { return nil }
+            guard let rawValue = theme_valueFor(&shadowColorKey) else { return nil }
             return HCTheme.Color(rawValue: rawValue)
         }
     }
@@ -58,7 +58,7 @@ extension UILabel {
         }
 
         get {
-            guard let rawValue = valueFor(&highlightedTextColorKey) else { return nil }
+            guard let rawValue = theme_valueFor(&highlightedTextColorKey) else { return nil }
             return HCTheme.Color(rawValue: rawValue)
         }
     }

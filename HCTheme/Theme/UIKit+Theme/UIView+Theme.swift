@@ -24,7 +24,7 @@ extension UIView {
         }
 
         get {
-            guard let rawValue = valueFor(&backgroundColorKey) else { return nil }
+            guard let rawValue = theme_valueFor(&backgroundColorKey) else { return nil }
             return HCTheme.Color(rawValue: rawValue)
         }
     }
@@ -40,7 +40,7 @@ extension UIView {
         }
 
         get {
-            guard let rawValue = valueFor(&tintColorKey) else { return nil }
+            guard let rawValue = theme_valueFor(&tintColorKey) else { return nil }
             return HCTheme.Color(rawValue: rawValue)
         }
     }

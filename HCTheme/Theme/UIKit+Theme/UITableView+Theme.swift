@@ -27,7 +27,7 @@ extension UITableView {
         }
 
         get {
-            guard let rawValue = valueFor(&separatorColorKey) else { return nil }
+            guard let rawValue = theme_valueFor(&separatorColorKey) else { return nil }
             return HCTheme.Color(rawValue: rawValue)
         }
 
@@ -44,7 +44,7 @@ extension UITableView {
         }
 
         get {
-            guard let rawValue = valueFor(&sectionIndexColorKey) else { return nil }
+            guard let rawValue = theme_valueFor(&sectionIndexColorKey) else { return nil }
             return HCTheme.Color(rawValue: rawValue)
         }
 
@@ -61,7 +61,7 @@ extension UITableView {
         }
 
         get {
-            guard let rawValue = valueFor(&sectionIndexBgColorKey) else { return nil }
+            guard let rawValue = theme_valueFor(&sectionIndexBgColorKey) else { return nil }
             return HCTheme.Color(rawValue: rawValue)
         }
 
@@ -78,7 +78,7 @@ extension UITableView {
         }
 
         get {
-            guard let rawValue = valueFor(&sectionIndexTrackingBgColorKey) else { return nil }
+            guard let rawValue = theme_valueFor(&sectionIndexTrackingBgColorKey) else { return nil }
             return HCTheme.Color(rawValue: rawValue)
         }
 

@@ -24,7 +24,7 @@ extension UIPageControl {
         }
 
         get {
-            guard let rawValue = valueFor(&pageIndicatorTintColorKey) else { return nil }
+            guard let rawValue = theme_valueFor(&pageIndicatorTintColorKey) else { return nil }
             return HCTheme.Color(rawValue: rawValue)
         }
     }
@@ -40,7 +40,7 @@ extension UIPageControl {
         }
 
         get {
-            guard let rawValue = valueFor(&currentPageIndicatorTintColorKey) else { return nil }
+            guard let rawValue = theme_valueFor(&currentPageIndicatorTintColorKey) else { return nil }
             return HCTheme.Color(rawValue: rawValue)
         }
     }

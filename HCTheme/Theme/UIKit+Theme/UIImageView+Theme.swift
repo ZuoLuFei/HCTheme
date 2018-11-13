@@ -35,7 +35,7 @@ extension UIImageView {
         }
 
         get {
-            guard let rawValue = valueFor(&imgKey) else { return nil }
+            guard let rawValue = theme_valueFor(&imgKey) else { return nil }
             return HCTheme.Image(rawValue: rawValue)
         }
     }

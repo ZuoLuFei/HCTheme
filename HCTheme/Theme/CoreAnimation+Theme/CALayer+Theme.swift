@@ -26,7 +26,7 @@ extension CALayer {
         }
 
         get {
-            guard let rawValue = valueFor(&shadowColorKey) else { return nil }
+            guard let rawValue = theme_valueFor(&shadowColorKey) else { return nil }
             return HCTheme.Color(rawValue: rawValue)
         }
     }
@@ -43,7 +43,7 @@ extension CALayer {
         }
 
         get {
-            guard let rawValue = valueFor(&borderColorKey) else { return nil }
+            guard let rawValue = theme_valueFor(&borderColorKey) else { return nil }
             return HCTheme.Color(rawValue: rawValue)
         }
     }
@@ -59,7 +59,7 @@ extension CALayer {
         }
 
         get {
-            guard let rawValue = valueFor(&backgroundColorKey) else { return nil }
+            guard let rawValue = theme_valueFor(&backgroundColorKey) else { return nil }
             return HCTheme.Color(rawValue: rawValue)
         }
     }

@@ -26,7 +26,7 @@ extension CAShapeLayer {
         }
 
         get {
-            guard let rawValue = valueFor(&strokeColorKey) else { return nil }
+            guard let rawValue = theme_valueFor(&strokeColorKey) else { return nil }
             return HCTheme.Color(rawValue: rawValue)
         }
     }
@@ -42,7 +42,7 @@ extension CAShapeLayer {
         }
 
         get {
-            guard let rawValue = valueFor(&fillColorKey) else { return nil }
+            guard let rawValue = theme_valueFor(&fillColorKey) else { return nil }
             return HCTheme.Color(rawValue: rawValue)
         }
     }

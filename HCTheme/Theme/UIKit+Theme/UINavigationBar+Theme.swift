@@ -22,7 +22,7 @@ extension UINavigationBar {
         }
 
         get {
-            guard let rawValue = valueFor(&barTintColorKey) else { return nil }
+            guard let rawValue = theme_valueFor(&barTintColorKey) else { return nil }
             return HCTheme.Color(rawValue: rawValue)
         }
     }

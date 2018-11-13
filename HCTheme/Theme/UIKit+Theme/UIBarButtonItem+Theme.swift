@@ -22,7 +22,7 @@ extension UIBarButtonItem {
         }
 
         get {
-            guard let rawValue = valueFor(&tintColorKey) else { return nil }
+            guard let rawValue = theme_valueFor(&tintColorKey) else { return nil }
             return HCTheme.Color(rawValue: rawValue)
         }
     }

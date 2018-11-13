@@ -23,7 +23,7 @@ extension UITextView {
         }
 
         get {
-            guard let rawValue = valueFor(&textColorKey) else { return nil }
+            guard let rawValue = theme_valueFor(&textColorKey) else { return nil }
             return HCTheme.Color(rawValue: rawValue)
         }
     }

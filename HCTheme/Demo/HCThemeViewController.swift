@@ -15,15 +15,6 @@ class HCThemeViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
-        _configUI()
-    }
-}
-
-// MARK: - 初始化UI
-extension HCThemeViewController {
-    private func _configUI() {
         _configNavigationBar()
     }
 
@@ -38,7 +29,7 @@ extension HCThemeViewController {
         changeBtn.contentHorizontalAlignment = .right
         changeBtn.addTarget(self, action: #selector(changeBtnClick), for: .touchUpInside)
         rightView.addSubview(changeBtn)
-
+        
         rightView.frame = CGRect(x: 0, y: 0, width: 80, height: 44)
         changeBtn.frame = CGRect(x: 0, y: 0, width: 80, height: 44)
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: rightView)
@@ -49,7 +40,6 @@ extension HCThemeViewController {
         let theme = HCThemeManager.share.current == HCTheme.night ? HCTheme.normal : HCTheme.night
         HCThemeManager.share.configThemeType(theme)
     }
-    
 }
 
 extension HCThemeViewController {
